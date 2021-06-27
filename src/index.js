@@ -22,6 +22,7 @@ function onGetApiImg(e) {
 	newFetchImg.query = e.currentTarget.elements.query.value.trim();
 
 	if (newFetchImg.query === "") {
+		refs.btnAddListImg.classList.remove('btn-block')
 		return alert('Введите наименование запроса');
 	}
 
