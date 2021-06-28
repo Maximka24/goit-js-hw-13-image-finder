@@ -37,6 +37,13 @@ function renderCardsImg(imgs){
 
 
 function onAddNewListRender() {
+	const element = document.getElementById('gallery');
+	
+	element.scrollIntoView({
+		behavior: 'smooth',
+		block: 'end',
+	});
+	
 	newFetchImg.fetchImg().then(renderCardsImg);
 }
 
