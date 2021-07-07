@@ -2,7 +2,6 @@ import NewFetchImg from './js/apiService';
 import itemCardImg from './hbs/img-card.hbs';
 import debounce from 'lodash.debounce';
 
-
 const refs = {
 	submitForm : document.querySelector('.search-form'),
 	btnAddListImg : document.querySelector('.button-add-img'),
@@ -58,5 +57,6 @@ function scrollToTarget() {
      	block: "end",
     });
 }
+
 
 
